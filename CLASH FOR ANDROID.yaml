@@ -1632,3 +1632,4 @@ rules:
   - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
   - GEOIP,IR,DIRECT
   - MATCH,, Manual Server, PROXY, LOAD BALANCE, PANDA, dns-failed
+
