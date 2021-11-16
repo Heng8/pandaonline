@@ -1,4 +1,4 @@
-﻿port: 7890
+port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
@@ -257,6 +257,96 @@ proxies:
     servername: null
     network: ws
     ws-path: /opentunnel?user=opentunnel.net-hcxjjcj
+    ws-headers: 
+       Host: connect.smart.com.kh
+       
+  - name: "🇮🇩V2-SMART-KH1"
+    type: vmess
+    server: idv-2.openv2ray.com
+    port: 80
+    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+    alterId: 16
+    cipher: auto
+    tls: null
+    skip-cert-verify: false
+    servername: null
+    network: ws
+    ws-path: /opentunnel?user=opentunnel.net-dcfdd
+    ws-headers: 
+       Host: connect.smart.com.kh
+       
+  - name: "🇸🇬V2-SMART-KH1"
+    type: vmess
+    server: sgv-3.openv2ray.com
+    port: 80
+    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+    alterId: 16
+    cipher: auto
+    tls: null
+    skip-cert-verify: false
+    servername: null
+    network: ws
+    ws-path: /opentunnel?user=opentunnel.net-hchxjxj
+    ws-headers: 
+       Host: connect.smart.com.kh
+       
+  - name: "🇮🇩V2-SMART-KH2"
+    type: vmess
+    server: idv-1.openv2ray.com
+    port: 80
+    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+    alterId: 16
+    cipher: auto
+    tls: null
+    skip-cert-verify: false
+    servername: null
+    network: ws
+    ws-path: /opentunnel?user=opentunnel.net-hcjxkx
+    ws-headers: 
+       Host: connect.smart.com.kh
+       
+  - name: "🇺🇲V2-SMART-KH1"
+    type: vmess
+    server: usv-1.openv2ray.com
+    port: 80
+    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+    alterId: 16
+    cipher: auto
+    tls: null
+    skip-cert-verify: false
+    servername: null
+    network: ws
+    ws-path: /opentunnel?user=opentunnel.net-hxhzj
+    ws-headers: 
+       Host: connect.smart.com.kh
+       
+  - name: "🇺🇲V2-SMART-KH2"
+    type: vmess
+    server: v2ray-sg1.sshagan.us
+    port: 80
+    uuid: 20d82a18-7825-437a-b6f9-db19e4062202
+    alterId: 0
+    cipher: auto
+    tls: null
+    skip-cert-verify: false
+    servername: null
+    network: ws
+    ws-path: /
+    ws-headers: 
+       Host: connect.smart.com.kh
+       
+  - name: "🇺🇲V2-SMART-KH3"
+    type: vmess
+    server: v2ray-us1.sshagan.us
+    port: 80
+    uuid: 8ed970c7-2880-4385-aa9b-40dc30738a1d
+    alterId: 0
+    cipher: auto
+    tls: null
+    skip-cert-verify: false
+    servername: null
+    network: ws
+    ws-path: /
     ws-headers: 
        Host: connect.smart.com.kh
        
@@ -943,6 +1033,12 @@ proxy-groups:
       - "⛅V2-SMART-KH3"
       - "⛅V2-SMART-KH4"
       - "⛅V2-SMART-KH5"
+      - "🇮🇩V2-SMART-KH1"
+      - "🇮🇩V2-SMART-KH2"
+      - "🇸🇬V2-SMART-KH1"
+      - "🇺🇲V2-SMART-KH1"
+      - "🇺🇲V2-SMART-KH2"
+      - "🇺🇲V2-SMART-KH3"
       - "⛅V2-PUBG"
       - "⛅V2-MLBB"
       - "⛅V2-FREEFIRE"
@@ -1019,11 +1115,18 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - "Automatic 🌀"
       - "⛅V2-SMART-KH1"
       - "⛅V2-SMART-KH2"
       - "⛅V2-SMART-KH3"
       - "⛅V2-SMART-KH4"
       - "⛅V2-SMART-KH5"
+      - "🇮🇩V2-SMART-KH1"
+      - "🇮🇩V2-SMART-KH2"
+      - "🇸🇬V2-SMART-KH1"
+      - "🇺🇲V2-SMART-KH1"
+      - "🇺🇲V2-SMART-KH2"
+      - "🇺🇲V2-SMART-KH3"
       - "⛅V2-PUBG"
       - "⛅V2-MLBB"
       - "⛅V2-FREEFIRE"
@@ -1102,11 +1205,18 @@ proxy-groups:
   - name: "Final"
     type: select
     proxies:
+      - "Automatic 🌀"
       - "⛅V2-SMART-KH1"
       - "⛅V2-SMART-KH2"
       - "⛅V2-SMART-KH3"
       - "⛅V2-SMART-KH4"
       - "⛅V2-SMART-KH5"
+      - "🇮🇩V2-SMART-KH1"
+      - "🇮🇩V2-SMART-KH2"
+      - "🇸🇬V2-SMART-KH1"
+      - "🇺🇲V2-SMART-KH1"
+      - "🇺🇲V2-SMART-KH2"
+      - "🇺🇲V2-SMART-KH3"
       - "⛅V2-PUBG"
       - "⛅V2-MLBB"
       - "⛅V2-FREEFIRE"
@@ -1190,6 +1300,12 @@ proxy-groups:
       - "⛅V2-SMART-KH3"
       - "⛅V2-SMART-KH4"
       - "⛅V2-SMART-KH5"
+      - "🇮🇩V2-SMART-KH1"
+      - "🇮🇩V2-SMART-KH2"
+      - "🇸🇬V2-SMART-KH1"
+      - "🇺🇲V2-SMART-KH1"
+      - "🇺🇲V2-SMART-KH2"
+      - "🇺🇲V2-SMART-KH3"
       - "⛅V2-PUBG"
       - "⛅V2-MLBB"
       - "⛅V2-FREEFIRE"
@@ -1273,6 +1389,12 @@ proxy-groups:
       - "⛅V2-SMART-KH3"
       - "⛅V2-SMART-KH4"
       - "⛅V2-SMART-KH5"
+      - "🇮🇩V2-SMART-KH1"
+      - "🇮🇩V2-SMART-KH2"
+      - "🇸🇬V2-SMART-KH1"
+      - "🇺🇲V2-SMART-KH1"
+      - "🇺🇲V2-SMART-KH2"
+      - "🇺🇲V2-SMART-KH3"
       - "⛅V2-PUBG"
       - "⛅V2-MLBB"
       - "⛅V2-FREEFIRE"
@@ -1356,6 +1478,12 @@ proxy-groups:
       - "⛅V2-SMART-KH3"
       - "⛅V2-SMART-KH4"
       - "⛅V2-SMART-KH5"
+      - "🇮🇩V2-SMART-KH1"
+      - "🇮🇩V2-SMART-KH2"
+      - "🇸🇬V2-SMART-KH1"
+      - "🇺🇲V2-SMART-KH1"
+      - "🇺🇲V2-SMART-KH2"
+      - "🇺🇲V2-SMART-KH3"
       - "⛅V2-PUBG"
       - "⛅V2-MLBB"
       - "⛅V2-FREEFIRE"
@@ -1504,4 +1632,3 @@ rules:
   - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
   - GEOIP,IR,DIRECT
   - MATCH,, Manual Server, PROXY, LOAD BALANCE, PANDA, dns-failed
-
