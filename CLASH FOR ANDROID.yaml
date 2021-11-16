@@ -1,0 +1,1507 @@
+﻿port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:80
+dns:
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:5450
+  enhanced-mode: fake-ip
+  nameserver:
+     - 1.1.1.1
+     - 1.1.1.2
+     - 1.1.1.3
+  fallback:
+     - tls://1.0.0.1:853
+     - tls://dns.google:853
+proxies:
+  - name: "⛅PUBG-TROJAN"
+    type: trojan
+    server: th-trojan.bonds.id
+    port: 443
+    password: 1e6b4590-4682-11ec-bbf8-1239d0255272
+    udp: true
+    sni: www.pubgmobile.com
+    alpn:
+       - h2
+       - http/1.1
+    skip-cert-verify: true
+    
+  - name: "⛅MLBB-TROJAN"
+    type: trojan
+    server: sg6-trojan.bonds.id
+    port: 443
+    password: 90c07900-4682-11ec-aa06-1239d0255272
+    udp: true
+    sni: m.mobilelegends.com
+    alpn:
+       - h2
+       - http/1.1
+    skip-cert-verify: true
+    
+  - name: "⛅FREEFIRE-TROJAN"
+    type: trojan
+    server: sg2-trojan.bonds.id
+    port: 443
+    password: bfc96c20-4682-11ec-908b-1239d0255272
+    udp: true
+    sni: ff.garena.com
+    alpn:
+       - h2
+       - http/1.1
+    skip-cert-verify: true
+    
+  - name: "⛅SOCIAL-PACK-TROJAN"
+    type: trojan
+    server: sg4-trojan.bonds.id
+    port: 443
+    password: e8c434c0-4682-11ec-bc49-1239d0255272
+    udp: true
+    sni: line.me
+    alpn:
+       - h2
+       - http/1.1
+    skip-cert-verify: true
+    
+  - name: "⛅FB-TROJAN"
+    type: trojan
+    server: sg3-trojan.bonds.id
+    port: 443
+    password: 08ff9480-4683-11ec-8f09-1239d0255272
+    udp: true
+    sni: m.facebook.com
+    alpn:
+       - h2
+       - http/1.1
+    skip-cert-verify: true
+    
+  - name: "⛅YT-TROJAN"
+    type: trojan
+    server: sg4-trojan.bonds.id
+    port: 443
+    password: 272608a0-4683-11ec-b8e4-1239d0255272
+    udp: true
+    sni: m.youtube.com
+    alpn:
+       - h2
+       - http/1.1
+    skip-cert-verify: true
+    
+  - name: "⛅LINE-TROJAN"
+    type: trojan
+    server: sg3-trojan.bonds.id
+    port: 443
+    password: 51c39c10-4683-11ec-a7ad-1239d0255272
+    udp: true
+    sni: line.me
+    alpn:
+       - h2
+       - http/1.1
+    skip-cert-verify: true
+    
+  - name: "⛅WECHAT-TROJAN"
+    type: trojan
+    server: sg3-trojan.bonds.id
+    port: 443
+    password: 51c39c10-4683-11ec-a7ad-1239d0255272
+    udp: true
+    sni: www.wechat.com
+    alpn:
+       - h2
+       - http/1.1
+    skip-cert-verify: true
+    
+  - name: "⛅IG-TROJAN"
+    type: trojan
+    server: sg8-trojan.bonds.id
+    port: 443
+    password: 792434c0-4683-11ec-aeac-1239d0255272
+    udp: true
+    sni: www.instagram.com
+    alpn:
+       - h2
+       - http/1.1
+    skip-cert-verify: true
+    
+  - name: "⛅WHATSAPP-TROJAN"
+    type: trojan
+    server: sggs-trojan.bonds.id
+    port: 443
+    password: a5391a00-4683-11ec-b90a-1239d0255272
+    udp: true
+    sni: www.whatsapp.com
+    alpn:
+       - h2
+       - http/1.1
+    skip-cert-verify: true
+    
+  - name: "⛅TIKTOK-TROJAN"
+    type: trojan
+    server: sggs-trojan.bonds.id
+    port: 443
+    password: a5391a00-4683-11ec-b90a-1239d0255272
+    udp: true
+    sni: www.tiktok.com
+    alpn:
+       - h2
+       - http/1.1
+    skip-cert-verify: true
+    
+  - name: "⛅VIBER-TROJAN"
+    type: trojan
+    server: id3-trojan.bonds.id
+    port: 443
+    password: dc25b5f0-4683-11ec-81b2-1239d0255272
+    udp: true
+    sni: www.viber.com
+    alpn:
+       - h2
+       - http/1.1
+    skip-cert-verify: true
+    
+  - name: "⛅ROS-TROJAN"
+    type: trojan
+    server: id3-trojan.bonds.id
+    port: 443
+    password: dc25b5f0-4683-11ec-81b2-1239d0255272
+    udp: true
+    sni: www.rulesofsurvivalgame.com
+    alpn:
+       - h2
+       - http/1.1
+    skip-cert-verify: true
+    
+  - name: "⛅SPOTIFY-TROJAN"
+    type: trojan
+    server: sg4-trojan.bonds.id
+    port: 443
+    password: 0c0e7980-4684-11ec-a773-1239d0255272
+    udp: true
+    sni: www.spotify.com
+    alpn:
+       - h2
+       - http/1.1
+    skip-cert-verify: true
+    
+  - name: "⛅V2-SMART-KH1"
+    type: vmess
+    server: id4.v2rayserv.com
+    port: 80
+    uuid: 4f45354b-61fd-4673-9fa1-cb311cc7f3e0
+    alterId: 64
+    cipher: auto
+    tls: null
+    skip-cert-verify: false
+    servername: null
+    network: ws
+    ws-path: /sshocean
+    ws-headers: 
+       Host: connect.smart.com.kh
+       
+  - name: "⛅V2-SMART-KH2"
+    type: vmess
+    server: id5.v2rayserv.com
+    port: 80
+    uuid: ffc9c4b6-d2dc-4a21-8458-e51806ddf343
+    alterId: 64
+    cipher: auto
+    tls: null
+    skip-cert-verify: false
+    servername: null
+    network: ws
+    ws-path: /sshocean
+    ws-headers: 
+       Host: connect.smart.com.kh
+       
+  - name: "⛅V2-SMART-KH3"
+    type: vmess
+    server: id6.v2rayserv.com
+    port: 80
+    uuid: 5a47279a-60ac-4e5a-896c-32bbce2ff6fb
+    alterId: 64
+    cipher: auto
+    tls: null
+    skip-cert-verify: false
+    servername: null
+    network: ws
+    ws-path: /sshocean
+    ws-headers: 
+       Host: connect.smart.com.kh
+       
+  - name: "⛅V2-SMART-KH4"
+    type: vmess
+    server: hk1.v2rayserv.com
+    port: 80
+    uuid: 6130e124-72c3-4a77-be26-9a4cd4a748e8
+    alterId: 64
+    cipher: auto
+    tls: null
+    skip-cert-verify: false
+    servername: null
+    network: ws
+    ws-path: /sshocean
+    ws-headers: 
+       Host: connect.smart.com.kh
+       
+  - name: "⛅V2-SMART-KH5"
+    type: vmess
+    server: idv-3.openv2ray.com
+    port: 80
+    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+    alterId: 16
+    cipher: auto
+    tls: null
+    skip-cert-verify: false
+    servername: null
+    network: ws
+    ws-path: /opentunnel?user=opentunnel.net-hcxjjcj
+    ws-headers: 
+       Host: connect.smart.com.kh
+       
+  - name: "⛅V2-PUBG"
+    type: vmess
+    server: v2ray-003.boasorte.xyz
+    port: 443
+    uuid: a40e90ac-1613-4477-8300-ccafb5df77b6
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers: 
+       Host: www.pubgmobile.com
+       
+  - name: "⛅V2-MLBB"
+    type: vmess
+    server: v2ray-004.boasorte.xyz
+    port: 443
+    uuid: a3a7ca9d-38e7-4f38-8207-127b0b839dd1
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers: 
+       Host: m.mobilelegends.com
+       
+  - name: "⛅V2-FREEFIRE"
+    type: vmess
+    server: v2ray-003.boasorte.xyz
+    port: 443
+    uuid: a40e90ac-1613-4477-8300-ccafb5df77b6
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers: 
+       Host: ff.garena.com
+       
+  - name: "⛅V2-SOCIAL-PACK"
+    type: vmess
+    server: v2ray-002.boasorte.xyz
+    port: 443
+    uuid: 71b89845-e2e8-4672-a956-970c9386a140
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers: 
+       Host: line.me
+       
+  - name: "⛅V2-TIKTOK"
+    type: vmess
+    server: v2ray-001.boasorte.xyz
+    port: 443
+    uuid: 573e3f00-012b-4ade-af18-aadd1f7f82e9
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers: 
+       Host: www.tiktok.com
+       
+  - name: "⛅V2-LINE"
+    type: vmess
+    server: v2ray-003.boasorte.xyz
+    port: 443
+    uuid: 6a61bdf9-b500-42e4-b605-82770de93340
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers: 
+       Host: line.me
+       
+  - name: "TEST"
+    type: vmess
+    server: v2ray-003.boasorte.xyz
+    port: 443
+    uuid: 6a61bdf9-b500-42e4-b605-82770de93340
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers:
+       Host: line.me
+       
+  - name: "⛅V2-WECHAT"
+    type: vmess
+    server: v2ray-003.boasorte.xyz
+    port: 443
+    uuid: 9b66b744-a17d-4300-8ba1-072b9a12f94f
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers: 
+       Host: www.wechat.com
+       
+  - name: "⛅V2-WHATSAPP"
+    type: vmess
+    server: v2ray-003.boasorte.xyz
+    port: 443
+    uuid: 9b66b744-a17d-4300-8ba1-072b9a12f94f
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers: 
+       Host: www.whatsapp.com
+       
+  - name: "⛅V2-VIBER"
+    type: vmess
+    server: v2ray-003.boasorte.xyz
+    port: 443
+    uuid: 9b66b744-a17d-4300-8ba1-072b9a12f94f
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers: 
+       Host: www.viber.com
+       
+  - name: "⛅V2-YT"
+    type: vmess
+    server: v2ray-003.boasorte.xyz
+    port: 443
+    uuid: 9b66b744-a17d-4300-8ba1-072b9a12f94f
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers: 
+       Host: m.youtube.com
+       
+  - name: "⛅V2-FB"
+    type: vmess
+    server: v2ray-003.boasorte.xyz
+    port: 443
+    uuid: 9b66b744-a17d-4300-8ba1-072b9a12f94f
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers: 
+       Host: m.facebook.com
+       
+  - name: "⛅V2-IG"
+    type: vmess
+    server: v2ray-003.boasorte.xyz
+    port: 443
+    uuid: 9b66b744-a17d-4300-8ba1-072b9a12f94f
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers: 
+       Host: www.instagram.com
+       
+  - name: "⛅V2-ROS"
+    type: vmess
+    server: v2ray-003.boasorte.xyz
+    port: 443
+    uuid: 9b66b744-a17d-4300-8ba1-072b9a12f94f
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers: 
+       Host: www.rulesofsurvivalgame.com
+       
+  - name: "⛅V2-SPOTIFY"
+    type: vmess
+    server: v2ray-003.boasorte.xyz
+    port: 443
+    uuid: 9b66b744-a17d-4300-8ba1-072b9a12f94f
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers: 
+       Host: www.spotify.com
+       
+  - name: "⛅SNELL-PUBG"
+    type: snell
+    server: tunnel.bonds.id
+    port: 37817
+    psk: C1iZFl3CZPDbNSTeEsV61V7whEBxgjG
+    obfs-opts:
+      mode: tls
+      host: www.pubgmobile.com
+
+  - name: "⛅SNELL-MLBB"
+    type: snell
+    server: tunnel.hostip.co
+    port: 12345
+    psk: wOOPnkk38f8UKZu92Dz2XC5rFB58A5M
+    obfs-opts:
+      mode: http
+      host: m.mobilelegends.com
+
+  - name: "⛅SNELL-FREEFIRE"
+    type: snell
+    server: tunnel.bonds.id
+    port: 37817
+    psk: C1iZFl3CZPDbNSTeEsV61V7whEBxgjG
+    obfs-opts:
+      mode: tls
+      host: ff.garena.com
+      
+  - name: "⛅SNELL-SOCIAL-PACK"
+    type: snell
+    server: tunnel.bonds.id
+    port: 37817
+    psk: C1iZFl3CZPDbNSTeEsV61V7whEBxgjG
+    obfs-opts:
+      mode: tls
+      host: line.me
+      
+  - name: "⛅SNELL-LINE"
+    type: snell
+    server: tunnel.bonds.id
+    port: 37817
+    psk: C1iZFl3CZPDbNSTeEsV61V7whEBxgjG
+    obfs-opts:
+      mode: tls
+      host: line.me
+      
+  - name: "⛅SNELL-WECHAT"
+    type: snell
+    server: tunnel.bonds.id
+    port: 37817
+    psk: C1iZFl3CZPDbNSTeEsV61V7whEBxgjG
+    obfs-opts:
+      mode: tls
+      host: www.wechat.com
+   
+  - name: "⛅SNELL-IG"
+    type: snell
+    server: tunnel.bonds.id
+    port: 37817
+    psk: C1iZFl3CZPDbNSTeEsV61V7whEBxgjG
+    obfs-opts:
+      mode: tls
+      host: www.instagram.com
+   
+  - name: "⛅SNELL-WHATSAPP"
+    type: snell
+    server: tunnel.bonds.id
+    port: 37817
+    psk: C1iZFl3CZPDbNSTeEsV61V7whEBxgjG
+    obfs-opts:
+      mode: tls
+      host: www.whatsapp.com
+   
+  - name: "⛅SNELL-YT"
+    type: snell
+    server: tunnel.bonds.id
+    port: 37817
+    psk: C1iZFl3CZPDbNSTeEsV61V7whEBxgjG
+    obfs-opts:
+      mode: tls
+      host: m.youtube.com
+   
+  - name: "⛅SNELL-FB"
+    type: snell
+    server: tunnel.bonds.id
+    port: 37817
+    psk: C1iZFl3CZPDbNSTeEsV61V7whEBxgjG
+    obfs-opts:
+      mode: tls
+      host: m.facebook.com
+      
+  - name: "⛅SNELL-SPOTIFY"
+    type: snell
+    server: tunnel.bonds.id
+    port: 37817
+    psk: C1iZFl3CZPDbNSTeEsV61V7whEBxgjG
+    obfs-opts:
+      mode: tls
+      host: www.spotify.com
+      
+  - name: "⛅SNELL-ROS"
+    type: snell
+    server: tunnel.bonds.id
+    port: 37817
+    psk: C1iZFl3CZPDbNSTeEsV61V7whEBxgjG
+    obfs-opts:
+      mode: tls
+      host: www.rulesofsurvivalgame.com
+      
+  - name: "⛅SNELL-VIBER"
+    type: snell
+    server: tunnel.bonds.id
+    port: 37817
+    psk: C1iZFl3CZPDbNSTeEsV61V7whEBxgjG
+    obfs-opts:
+      mode: tls
+      host: www.rulesofsurvivalgame.com
+      
+  - name: "⛅SNELL-TIKTOK"
+    type: snell
+    server: tunnel.bonds.id
+    port: 37817
+    psk: C1iZFl3CZPDbNSTeEsV61V7whEBxgjG
+    obfs-opts:
+      mode: tls
+      host: www.tiktok.com
+   
+  - name: "⛅SS-SMART-KH1"
+    type: ss
+    server: 51.75.141.238
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: MDI1ODM5
+    plugin: obfs
+    plugin-opts:
+       mode: http
+       host: connect.smart.com.kh
+
+  - name: "⛅SS-SMART-KH2"
+    type: ss
+    server: 51.195.118.69
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: NzQ0NzBl
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: connect.smart.com.kh
+
+  - name: "⛅SS-SMART-KH3"
+    type: ss
+    server: 146.59.3.33
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: YmRiMWRk
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: connect.smart.com.kh
+
+  - name: "⛅SS-SMART-KH4"
+    type: ss
+    server: 51.81.35.164
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: MjZhYmQ1
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: connect.smart.com.kh
+
+  - name: "⛅SS-SMART-KH5"
+    type: ss
+    server: 51.79.243.22
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: iUTjF
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: connect.smart.com.kh
+      
+  - name: "⛅SS-PUBG"
+    type: ss
+    server: 51.75.141.238
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: MDI1ODM5
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: www.pubgmobile.com
+      
+  - name: "⛅SS-MLBB"
+    type: ss
+    server: 51.195.118.69
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: NzQ0NzBl
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: m.mobilelegends.com
+      
+  - name: "⛅SS-FREEFIRE"
+    type: ss
+    server: 146.59.3.33
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: YmRiMWRk
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: ff.garena.com
+      
+  - name: "⛅SS-SOCIAL-PACK"
+    type: ss
+    server: 51.81.35.164
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: MjZhYmQ1
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: line.me
+      
+  - name: "⛅SS-LINE"
+    type: ss
+    server: 51.79.243.22
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: iUTjF
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: line.me
+      
+  - name: "⛅SS-WECHAT"
+    type: ss
+    server: 103.3.63.228
+    port: 1470
+    cipher: chacha20-ietf-poly1305
+    password: kituvpn-bcxjjx
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: www.wechat.com
+      
+  - name: "⛅SS-WHATSAPP"
+    type: ss
+    server: 51.79.243.22
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: YTg4M
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: www.whatsapp.com
+      
+  - name: "⛅SS-IG"
+    type: ss
+    server: 51.79.243.22
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: YTg4M
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: www.instagram.com
+      
+  - name: "⛅SS-YT"
+    type: ss
+    server: 51.79.243.22
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: YTg4M
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: m.youtube.com
+      
+  - name: "⛅SS-FB"
+    type: ss
+    server: 51.79.243.22
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: YTg4M
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: m.facebook.com
+      
+  - name: "⛅SS-ROS"
+    type: ss
+    server: 51.79.243.22
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: YTg4M
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: www.rulesofsurvivalgame.com
+      
+  - name: "⛅SS-VIBER"
+    type: ss
+    server: 51.79.243.22
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: YTg4M
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: www.viber.com
+      
+  - name: "⛅SS-SPOTIFY"
+    type: ss
+    server: 51.79.243.22
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: YTg4M
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: www.spotify.com
+      
+  - name: "⛅SS-TIKTOK"
+    type: ss
+    server: 51.79.243.22
+    port: 8139
+    cipher: chacha20-ietf-poly1305
+    password: YTg4M
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: www.tiktok.com
+      
+  - name: "⛅SS-UDP-PROXY1"
+    type: ss
+    server: 46.29.218.6
+    port: 8090
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+    udp: true
+      
+  - name: "⛅SS-UDP-PROXY2"
+    type: ss
+    server: 198.57.27.218
+    port: 8090
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+    udp: true
+    
+  - name: "⛅SS-UDP-PROXY3"
+    type: ss
+    server: 46.29.218.6
+    port: 8091
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+    udp: true
+     
+  - name: "⛅SS-UDP-PROXY4"
+    type: ss
+    server: 145.239.1.137
+    port: 8091
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+    udp: true
+    
+  - name: "⛅SS-UDP-PROXY5"
+    type: ss
+    server: 198.57.27.218
+    port: 2376
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+    udp: true
+    
+  - name: "⛅SS-OUTLINE-PROXY1"
+    type: ss
+    server: 64.42.179.244
+    port: 3817
+    cipher: chacha20-ietf-poly1305
+    password: ky9Xx5K9PkRh
+    udp: true
+    
+  - name: "⛅SS-OUTLINE-PROXY2"
+    type: ss
+    server: 212.129.52.204
+    port: 41652
+    cipher: chacha20-ietf-poly1305
+    password: nU75AqhZKsM3
+    udp: true
+    
+  - name: "⛅SS-OUTLINE-PROXY3"
+    type: ss
+    server: 89.163.245.192
+    port: 21439
+    cipher: chacha20-ietf-poly1305
+    password: 6ud9RFBqQrMk
+    udp: true
+     
+  - name: "⛅SOCKS-PROXY1"
+    type: socks5
+    server: line.me.id-socks5.woiden.net
+    port: 443  
+    username: woiden_ffgrdf
+    password: gegdw
+    udp: true
+    tls: true
+    skip-cert-verify: true
+
+  - name: "⛅SOCKS-PROXY2"
+    type: socks5
+    server: m.mobilelegends.com.sg-socks5.woiden.net
+    port: 443  
+    username: woiden_sredfr
+    password: dfessd
+    udp: true
+    tls: true
+    skip-cert-verify: true
+ 
+  - name: "⛅SOCKS-PROXY3"
+    type: socks5
+    server: www.pubgmobile.com.sg-socks5.woiden.net
+    port: 443  
+    username: woiden_sredfr
+    password: dfessd
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    
+  - name: "⛅SOCKS-PROXY4"
+    type: socks5
+    server: ff.garena.com.id-socks5.woiden.net
+    port: 443  
+    username: woiden_ffgrdf
+    password: gegdw
+    udp: true
+    tls: true
+    skip-cert-verify: true
+
+  - name: "⛅SOCKS-PROXY5"
+    type: socks5
+    server: www.wechat.com.id-socks5.woiden.net
+    port: 443  
+    username: woiden_ffgrdf
+    password: gegdw
+    udp: true
+    tls: true
+    skip-cert-verify: true
+        
+proxy-groups:
+  - name: Manual Server
+    type: select
+    proxies:
+      - "Automatic 🌀"
+      - "TEST"
+      - "⛅V2-SMART-KH1"
+      - "⛅V2-SMART-KH2"
+      - "⛅V2-SMART-KH3"
+      - "⛅V2-SMART-KH4"
+      - "⛅V2-SMART-KH5"
+      - "⛅V2-PUBG"
+      - "⛅V2-MLBB"
+      - "⛅V2-FREEFIRE"
+      - "⛅V2-SOCIAL-PACK"
+      - "⛅V2-LINE"
+      - "⛅V2-WECHAT"
+      - "⛅V2-WHATSAPP"
+      - "⛅V2-IG"
+      - "⛅V2-FB"
+      - "⛅V2-YT"
+      - "⛅V2-ROS"
+      - "⛅V2-SPOTIFY"
+      - "⛅V2-TIKTOK"
+      - "⛅V2-VIBER"
+      - "⛅PUBG-TROJAN"
+      - "⛅MLBB-TROJAN"
+      - "⛅FREEFIRE-TROJAN"
+      - "⛅SOCIAL-PACK-TROJAN"
+      - "⛅FB-TROJAN"
+      - "⛅YT-TROJAN"
+      - "⛅IG-TROJAN"
+      - "⛅ROS-TROJAN"
+      - "⛅VIBER-TROJAN"
+      - "⛅WECHAT-TROJAN"
+      - "⛅WHATSAPP-TROJAN"
+      - "⛅LINE-TROJAN"
+      - "⛅SPOTIFY-TROJAN"
+      - "⛅SNELL-PUBG"
+      - "⛅SNELL-MLBB"
+      - "⛅SNELL-FREEFIRE"
+      - "⛅SNELL-ROS"
+      - "⛅SNELL-SOCIAL-PACK"
+      - "⛅SNELL-LINE"
+      - "⛅SNELL-WECHAT"
+      - "⛅SNELL-WHATSAPP"
+      - "⛅SNELL-VIBER"
+      - "⛅SNELL-TIKTOK"
+      - "⛅SNELL-IG"
+      - "⛅SNELL-SPOTIFY"
+      - "⛅SNELL-YT"
+      - "⛅SNELL-FB"
+      - "⛅SS-SMART-KH1"
+      - "⛅SS-SMART-KH2"
+      - "⛅SS-SMART-KH3"
+      - "⛅SS-SMART-KH4"
+      - "⛅SS-SMART-KH5"
+      - "⛅SS-PUBG"
+      - "⛅SS-MLBB"
+      - "⛅SS-FREEFIRE"
+      - "⛅SS-SOCIAL-PACK"
+      - "⛅SS-LINE"
+      - "⛅SS-WECHAT"
+      - "⛅SS-WHATSAPP"
+      - "⛅SS-TIKTOK"
+      - "⛅SS-FB"
+      - "⛅SS-YT"
+      - "⛅SS-IG"
+      - "⛅SS-VIBER"
+      - "⛅SS-SPOTIFY"
+      - "⛅SS-ROS"
+      - "⛅SS-UDP-PROXY1"
+      - "⛅SS-UDP-PROXY2"
+      - "⛅SS-UDP-PROXY3"
+      - "⛅SS-UDP-PROXY4"
+      - "⛅SS-UDP-PROXY5"
+      - "⛅SS-OUTLINE-PROXY1"
+      - "⛅SS-OUTLINE-PROXY2"
+      - "⛅SS-OUTLINE-PROXY3"
+      - "⛅SOCKS-PROXY1"
+      - "⛅SOCKS-PROXY2"
+      - "⛅SOCKS-PROXY3"
+      - "⛅SOCKS-PROXY4"
+      - "⛅SOCKS-PROXY5"
+  - name: "PROXY"
+    type: select
+    proxies:
+      - "⛅V2-SMART-KH1"
+      - "⛅V2-SMART-KH2"
+      - "⛅V2-SMART-KH3"
+      - "⛅V2-SMART-KH4"
+      - "⛅V2-SMART-KH5"
+      - "⛅V2-PUBG"
+      - "⛅V2-MLBB"
+      - "⛅V2-FREEFIRE"
+      - "⛅V2-SOCIAL-PACK"
+      - "⛅V2-LINE"
+      - "⛅V2-WECHAT"
+      - "⛅V2-WHATSAPP"
+      - "⛅V2-IG"
+      - "⛅V2-FB"
+      - "⛅V2-YT"
+      - "⛅V2-ROS"
+      - "⛅V2-SPOTIFY"
+      - "⛅V2-TIKTOK"
+      - "⛅V2-VIBER"
+      - "⛅PUBG-TROJAN"
+      - "⛅MLBB-TROJAN"
+      - "⛅FREEFIRE-TROJAN"
+      - "⛅SOCIAL-PACK-TROJAN"
+      - "⛅FB-TROJAN"
+      - "⛅YT-TROJAN"
+      - "⛅IG-TROJAN"
+      - "⛅ROS-TROJAN"
+      - "⛅VIBER-TROJAN"
+      - "⛅WECHAT-TROJAN"
+      - "⛅WHATSAPP-TROJAN"
+      - "⛅LINE-TROJAN"
+      - "⛅SPOTIFY-TROJAN"
+      - "⛅SNELL-PUBG"
+      - "⛅SNELL-MLBB"
+      - "⛅SNELL-FREEFIRE"
+      - "⛅SNELL-ROS"
+      - "⛅SNELL-SOCIAL-PACK"
+      - "⛅SNELL-LINE"
+      - "⛅SNELL-WECHAT"
+      - "⛅SNELL-WHATSAPP"
+      - "⛅SNELL-VIBER"
+      - "⛅SNELL-TIKTOK"
+      - "⛅SNELL-IG"
+      - "⛅SNELL-SPOTIFY"
+      - "⛅SNELL-YT"
+      - "⛅SNELL-FB"
+      - "⛅SS-SMART-KH1"
+      - "⛅SS-SMART-KH2"
+      - "⛅SS-SMART-KH3"
+      - "⛅SS-SMART-KH4"
+      - "⛅SS-SMART-KH5"
+      - "⛅SS-PUBG"
+      - "⛅SS-MLBB"
+      - "⛅SS-FREEFIRE"
+      - "⛅SS-SOCIAL-PACK"
+      - "⛅SS-LINE"
+      - "⛅SS-WECHAT"
+      - "⛅SS-WHATSAPP"
+      - "⛅SS-TIKTOK"
+      - "⛅SS-FB"
+      - "⛅SS-YT"
+      - "⛅SS-IG"
+      - "⛅SS-VIBER"
+      - "⛅SS-SPOTIFY"
+      - "⛅SS-ROS"
+      - "⛅SS-UDP-PROXY1"
+      - "⛅SS-UDP-PROXY2"
+      - "⛅SS-UDP-PROXY3"
+      - "⛅SS-UDP-PROXY4"
+      - "⛅SS-UDP-PROXY5"
+      - "⛅SS-OUTLINE-PROXY1"
+      - "⛅SS-OUTLINE-PROXY2"
+      - "⛅SS-OUTLINE-PROXY3"
+      - "⛅SOCKS-PROXY1"
+      - "⛅SOCKS-PROXY2"
+      - "⛅SOCKS-PROXY3"
+      - "⛅SOCKS-PROXY4"
+      - "⛅SOCKS-PROXY5"
+    url: https://www.google.com/
+    interval: 300
+  - name: "Final"
+    type: select
+    proxies:
+      - "⛅V2-SMART-KH1"
+      - "⛅V2-SMART-KH2"
+      - "⛅V2-SMART-KH3"
+      - "⛅V2-SMART-KH4"
+      - "⛅V2-SMART-KH5"
+      - "⛅V2-PUBG"
+      - "⛅V2-MLBB"
+      - "⛅V2-FREEFIRE"
+      - "⛅V2-SOCIAL-PACK"
+      - "⛅V2-LINE"
+      - "⛅V2-WECHAT"
+      - "⛅V2-WHATSAPP"
+      - "⛅V2-IG"
+      - "⛅V2-FB"
+      - "⛅V2-YT"
+      - "⛅V2-ROS"
+      - "⛅V2-SPOTIFY"
+      - "⛅V2-TIKTOK"
+      - "⛅V2-VIBER"
+      - "⛅PUBG-TROJAN"
+      - "⛅MLBB-TROJAN"
+      - "⛅FREEFIRE-TROJAN"
+      - "⛅SOCIAL-PACK-TROJAN"
+      - "⛅FB-TROJAN"
+      - "⛅YT-TROJAN"
+      - "⛅IG-TROJAN"
+      - "⛅ROS-TROJAN"
+      - "⛅VIBER-TROJAN"
+      - "⛅WECHAT-TROJAN"
+      - "⛅WHATSAPP-TROJAN"
+      - "⛅LINE-TROJAN"
+      - "⛅SPOTIFY-TROJAN"
+      - "⛅SNELL-PUBG"
+      - "⛅SNELL-MLBB"
+      - "⛅SNELL-FREEFIRE"
+      - "⛅SNELL-ROS"
+      - "⛅SNELL-SOCIAL-PACK"
+      - "⛅SNELL-LINE"
+      - "⛅SNELL-WECHAT"
+      - "⛅SNELL-WHATSAPP"
+      - "⛅SNELL-VIBER"
+      - "⛅SNELL-TIKTOK"
+      - "⛅SNELL-IG"
+      - "⛅SNELL-SPOTIFY"
+      - "⛅SNELL-YT"
+      - "⛅SNELL-FB"
+      - "⛅SS-SMART-KH1"
+      - "⛅SS-SMART-KH2"
+      - "⛅SS-SMART-KH3"
+      - "⛅SS-SMART-KH4"
+      - "⛅SS-SMART-KH5"
+      - "⛅SS-PUBG"
+      - "⛅SS-MLBB"
+      - "⛅SS-FREEFIRE"
+      - "⛅SS-SOCIAL-PACK"
+      - "⛅SS-LINE"
+      - "⛅SS-WECHAT"
+      - "⛅SS-WHATSAPP"
+      - "⛅SS-TIKTOK"
+      - "⛅SS-FB"
+      - "⛅SS-YT"
+      - "⛅SS-IG"
+      - "⛅SS-VIBER"
+      - "⛅SS-SPOTIFY"
+      - "⛅SS-ROS"
+      - "⛅SS-UDP-PROXY1"
+      - "⛅SS-UDP-PROXY2"
+      - "⛅SS-UDP-PROXY3"
+      - "⛅SS-UDP-PROXY4"
+      - "⛅SS-UDP-PROXY5"
+      - "⛅SS-OUTLINE-PROXY1"
+      - "⛅SS-OUTLINE-PROXY2"
+      - "⛅SS-OUTLINE-PROXY3"
+      - "⛅SOCKS-PROXY1"
+      - "⛅SOCKS-PROXY2"
+      - "⛅SOCKS-PROXY3"
+      - "⛅SOCKS-PROXY4"
+      - "⛅SOCKS-PROXY5"
+    url: https://www.google.com/
+    interval: 300
+  - name: Automatic 🌀
+    type: url-test
+    proxies:
+      - "⛅V2-SMART-KH1"
+      - "⛅V2-SMART-KH2"
+      - "⛅V2-SMART-KH3"
+      - "⛅V2-SMART-KH4"
+      - "⛅V2-SMART-KH5"
+      - "⛅V2-PUBG"
+      - "⛅V2-MLBB"
+      - "⛅V2-FREEFIRE"
+      - "⛅V2-SOCIAL-PACK"
+      - "⛅V2-LINE"
+      - "⛅V2-WECHAT"
+      - "⛅V2-WHATSAPP"
+      - "⛅V2-IG"
+      - "⛅V2-FB"
+      - "⛅V2-YT"
+      - "⛅V2-ROS"
+      - "⛅V2-SPOTIFY"
+      - "⛅V2-TIKTOK"
+      - "⛅V2-VIBER"
+      - "⛅PUBG-TROJAN"
+      - "⛅MLBB-TROJAN"
+      - "⛅FREEFIRE-TROJAN"
+      - "⛅SOCIAL-PACK-TROJAN"
+      - "⛅FB-TROJAN"
+      - "⛅YT-TROJAN"
+      - "⛅IG-TROJAN"
+      - "⛅ROS-TROJAN"
+      - "⛅VIBER-TROJAN"
+      - "⛅WECHAT-TROJAN"
+      - "⛅WHATSAPP-TROJAN"
+      - "⛅LINE-TROJAN"
+      - "⛅SPOTIFY-TROJAN"
+      - "⛅SNELL-PUBG"
+      - "⛅SNELL-MLBB"
+      - "⛅SNELL-FREEFIRE"
+      - "⛅SNELL-ROS"
+      - "⛅SNELL-SOCIAL-PACK"
+      - "⛅SNELL-LINE"
+      - "⛅SNELL-WECHAT"
+      - "⛅SNELL-WHATSAPP"
+      - "⛅SNELL-VIBER"
+      - "⛅SNELL-TIKTOK"
+      - "⛅SNELL-IG"
+      - "⛅SNELL-SPOTIFY"
+      - "⛅SNELL-YT"
+      - "⛅SNELL-FB"
+      - "⛅SS-SMART-KH1"
+      - "⛅SS-SMART-KH2"
+      - "⛅SS-SMART-KH3"
+      - "⛅SS-SMART-KH4"
+      - "⛅SS-SMART-KH5"
+      - "⛅SS-PUBG"
+      - "⛅SS-MLBB"
+      - "⛅SS-FREEFIRE"
+      - "⛅SS-SOCIAL-PACK"
+      - "⛅SS-LINE"
+      - "⛅SS-WECHAT"
+      - "⛅SS-WHATSAPP"
+      - "⛅SS-TIKTOK"
+      - "⛅SS-FB"
+      - "⛅SS-YT"
+      - "⛅SS-IG"
+      - "⛅SS-VIBER"
+      - "⛅SS-SPOTIFY"
+      - "⛅SS-ROS"
+      - "⛅SS-UDP-PROXY1"
+      - "⛅SS-UDP-PROXY2"
+      - "⛅SS-UDP-PROXY3"
+      - "⛅SS-UDP-PROXY4"
+      - "⛅SS-UDP-PROXY5"
+      - "⛅SS-OUTLINE-PROXY1"
+      - "⛅SS-OUTLINE-PROXY2"
+      - "⛅SS-OUTLINE-PROXY3"
+      - "⛅SOCKS-PROXY1"
+      - "⛅SOCKS-PROXY2"
+      - "⛅SOCKS-PROXY3"
+      - "⛅SOCKS-PROXY4"
+      - "⛅SOCKS-PROXY5"
+    url: https://www.google.com/
+    interval: 300
+  - name: "Fallback"
+    type: fallback
+    proxies:
+      - "⛅V2-SMART-KH1"
+      - "⛅V2-SMART-KH2"
+      - "⛅V2-SMART-KH3"
+      - "⛅V2-SMART-KH4"
+      - "⛅V2-SMART-KH5"
+      - "⛅V2-PUBG"
+      - "⛅V2-MLBB"
+      - "⛅V2-FREEFIRE"
+      - "⛅V2-SOCIAL-PACK"
+      - "⛅V2-LINE"
+      - "⛅V2-WECHAT"
+      - "⛅V2-WHATSAPP"
+      - "⛅V2-IG"
+      - "⛅V2-FB"
+      - "⛅V2-YT"
+      - "⛅V2-ROS"
+      - "⛅V2-SPOTIFY"
+      - "⛅V2-TIKTOK"
+      - "⛅V2-VIBER"
+      - "⛅PUBG-TROJAN"
+      - "⛅MLBB-TROJAN"
+      - "⛅FREEFIRE-TROJAN"
+      - "⛅SOCIAL-PACK-TROJAN"
+      - "⛅FB-TROJAN"
+      - "⛅YT-TROJAN"
+      - "⛅IG-TROJAN"
+      - "⛅ROS-TROJAN"
+      - "⛅VIBER-TROJAN"
+      - "⛅WECHAT-TROJAN"
+      - "⛅WHATSAPP-TROJAN"
+      - "⛅LINE-TROJAN"
+      - "⛅SPOTIFY-TROJAN"
+      - "⛅SNELL-PUBG"
+      - "⛅SNELL-MLBB"
+      - "⛅SNELL-FREEFIRE"
+      - "⛅SNELL-ROS"
+      - "⛅SNELL-SOCIAL-PACK"
+      - "⛅SNELL-LINE"
+      - "⛅SNELL-WECHAT"
+      - "⛅SNELL-WHATSAPP"
+      - "⛅SNELL-VIBER"
+      - "⛅SNELL-TIKTOK"
+      - "⛅SNELL-IG"
+      - "⛅SNELL-SPOTIFY"
+      - "⛅SNELL-YT"
+      - "⛅SNELL-FB"
+      - "⛅SS-SMART-KH1"
+      - "⛅SS-SMART-KH2"
+      - "⛅SS-SMART-KH3"
+      - "⛅SS-SMART-KH4"
+      - "⛅SS-SMART-KH5"
+      - "⛅SS-PUBG"
+      - "⛅SS-MLBB"
+      - "⛅SS-FREEFIRE"
+      - "⛅SS-SOCIAL-PACK"
+      - "⛅SS-LINE"
+      - "⛅SS-WECHAT"
+      - "⛅SS-WHATSAPP"
+      - "⛅SS-TIKTOK"
+      - "⛅SS-FB"
+      - "⛅SS-YT"
+      - "⛅SS-IG"
+      - "⛅SS-VIBER"
+      - "⛅SS-SPOTIFY"
+      - "⛅SS-ROS"
+      - "⛅SS-UDP-PROXY1"
+      - "⛅SS-UDP-PROXY2"
+      - "⛅SS-UDP-PROXY3"
+      - "⛅SS-UDP-PROXY4"
+      - "⛅SS-UDP-PROXY5"
+      - "⛅SS-OUTLINE-PROXY1"
+      - "⛅SS-OUTLINE-PROXY2"
+      - "⛅SS-OUTLINE-PROXY3"
+      - "⛅SOCKS-PROXY1"
+      - "⛅SOCKS-PROXY2"
+      - "⛅SOCKS-PROXY3"
+      - "⛅SOCKS-PROXY4"
+      - "⛅SOCKS-PROXY5"
+    url: https://www.google.com/
+    interval: 300
+  - name: "LOAD BALANCE"
+    type: load-balance
+    proxies:
+      - "⛅V2-SMART-KH1"
+      - "⛅V2-SMART-KH2"
+      - "⛅V2-SMART-KH3"
+      - "⛅V2-SMART-KH4"
+      - "⛅V2-SMART-KH5"
+      - "⛅V2-PUBG"
+      - "⛅V2-MLBB"
+      - "⛅V2-FREEFIRE"
+      - "⛅V2-SOCIAL-PACK"
+      - "⛅V2-LINE"
+      - "⛅V2-WECHAT"
+      - "⛅V2-WHATSAPP"
+      - "⛅V2-IG"
+      - "⛅V2-FB"
+      - "⛅V2-YT"
+      - "⛅V2-ROS"
+      - "⛅V2-SPOTIFY"
+      - "⛅V2-TIKTOK"
+      - "⛅V2-VIBER"
+      - "⛅PUBG-TROJAN"
+      - "⛅MLBB-TROJAN"
+      - "⛅FREEFIRE-TROJAN"
+      - "⛅SOCIAL-PACK-TROJAN"
+      - "⛅FB-TROJAN"
+      - "⛅YT-TROJAN"
+      - "⛅IG-TROJAN"
+      - "⛅ROS-TROJAN"
+      - "⛅VIBER-TROJAN"
+      - "⛅WECHAT-TROJAN"
+      - "⛅WHATSAPP-TROJAN"
+      - "⛅LINE-TROJAN"
+      - "⛅SPOTIFY-TROJAN"
+      - "⛅SNELL-PUBG"
+      - "⛅SNELL-MLBB"
+      - "⛅SNELL-FREEFIRE"
+      - "⛅SNELL-ROS"
+      - "⛅SNELL-SOCIAL-PACK"
+      - "⛅SNELL-LINE"
+      - "⛅SNELL-WECHAT"
+      - "⛅SNELL-WHATSAPP"
+      - "⛅SNELL-VIBER"
+      - "⛅SNELL-TIKTOK"
+      - "⛅SNELL-IG"
+      - "⛅SNELL-SPOTIFY"
+      - "⛅SNELL-YT"
+      - "⛅SNELL-FB"
+      - "⛅SS-SMART-KH1"
+      - "⛅SS-SMART-KH2"
+      - "⛅SS-SMART-KH3"
+      - "⛅SS-SMART-KH4"
+      - "⛅SS-SMART-KH5"
+      - "⛅SS-PUBG"
+      - "⛅SS-MLBB"
+      - "⛅SS-FREEFIRE"
+      - "⛅SS-SOCIAL-PACK"
+      - "⛅SS-LINE"
+      - "⛅SS-WECHAT"
+      - "⛅SS-WHATSAPP"
+      - "⛅SS-TIKTOK"
+      - "⛅SS-FB"
+      - "⛅SS-YT"
+      - "⛅SS-IG"
+      - "⛅SS-VIBER"
+      - "⛅SS-SPOTIFY"
+      - "⛅SS-ROS"
+      - "⛅SS-UDP-PROXY1"
+      - "⛅SS-UDP-PROXY2"
+      - "⛅SS-UDP-PROXY3"
+      - "⛅SS-UDP-PROXY4"
+      - "⛅SS-UDP-PROXY5"
+      - "⛅SS-OUTLINE-PROXY1"
+      - "⛅SS-OUTLINE-PROXY2"
+      - "⛅SS-OUTLINE-PROXY3"
+      - "⛅SOCKS-PROXY1"
+      - "⛅SOCKS-PROXY2"
+      - "⛅SOCKS-PROXY3"
+      - "⛅SOCKS-PROXY4"
+      - "⛅SOCKS-PROXY5"
+    url: 'https://www.google.com/'
+    interval: 300
+rules:
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+  - DOMAIN-SUFFIX,abc.xyz,PROXY
+  - DOMAIN-SUFFIX,android.com,PROXY
+  - DOMAIN-SUFFIX,androidify.com,PROXY
+  - DOMAIN-SUFFIX,dialogflow.com,PROXY
+  - DOMAIN-SUFFIX,autodraw.com,PROXY
+  - DOMAIN-SUFFIX,capitalg.com,PROXY
+  - DOMAIN-SUFFIX,certificate-transparency.org,PROXY
+  - DOMAIN-SUFFIX,chrome.com,PROXY
+  - DOMAIN-SUFFIX,chromeexperiments.com,PROXY
+  - DOMAIN-SUFFIX,chromestatus.com,PROXY
+  - DOMAIN-SUFFIX,chromium.org,PROXY
+  - DOMAIN-SUFFIX,creativelab5.com,PROXY
+  - DOMAIN-SUFFIX,debug.com,PROXY
+  - DOMAIN-SUFFIX,deepmind.com,PROXY
+  - DOMAIN-SUFFIX,firebaseio.com,PROXY
+  - DOMAIN-SUFFIX,getmdl.io,PROXY
+  - DOMAIN-SUFFIX,ggpht.com,PROXY
+  - DOMAIN-SUFFIX,gmail.com,PROXY
+  - DOMAIN-SUFFIX,gmodules.com,PROXY
+  - DOMAIN-SUFFIX,godoc.org,PROXY
+  - DOMAIN-SUFFIX,golang.org,PROXY
+  - DOMAIN-SUFFIX,gstatic.com,PROXY
+  - DOMAIN-SUFFIX,gv.com,PROXY
+  - DOMAIN-SUFFIX,gwtproject.org,PROXY
+  - DOMAIN-SUFFIX,itasoftware.com,PROXY
+  - DOMAIN-SUFFIX,madewithcode.com,PROXY
+  - DOMAIN-SUFFIX,material.io,PROXY
+  - DOMAIN-SUFFIX,polymer-project.org,PROXY
+  - DOMAIN-SUFFIX,admin.recaptcha.net,PROXY
+  - DOMAIN-SUFFIX,recaptcha.net,PROXY
+  - DOMAIN-SUFFIX,shattered.io,PROXY
+  - DOMAIN-SUFFIX,synergyse.com,PROXY
+  - DOMAIN-SUFFIX,tensorflow.org,PROXY
+  - DOMAIN-SUFFIX,tfhub.dev,PROXY
+  - DOMAIN-SUFFIX,tiltbrush.com,PROXY
+  - DOMAIN-SUFFIX,waveprotocol.org,PROXY
+  - DOMAIN-SUFFIX,waymo.com,PROXY
+  - DOMAIN-SUFFIX,webmproject.org,PROXY
+  - DOMAIN-SUFFIX,webrtc.org,PROXY
+  - DOMAIN-SUFFIX,whatbrowser.org,PROXY
+  - DOMAIN-SUFFIX,widevine.com,PROXY
+  - DOMAIN-SUFFIX,x.company,PROXY
+  - DOMAIN-SUFFIX,youtu.be,PROXY
+  - DOMAIN-SUFFIX,yt.be,PROXY
+  - DOMAIN-SUFFIX,ytimg.com,PROXY
+  - DOMAIN-SUFFIX,ad.com,REJECT
+  - DOMAIN,analytics.google.com,REJECT
+  - DOMAIN,analyticsinsights-pa.googleapis.com,REJECT
+  - DOMAIN,analyticsreporting.googleapis.com,REJECT
+  - DOMAIN-SUFFIX,doubleclick.net,REJECT
+  - DOMAIN-SUFFIX,googleadservices.com,REJECT
+  - DOMAIN-SUFFIX,googleadsserving.cn,REJECT
+  - DOMAIN-SUFFIX,googlesyndication.com,REJECT
+  - DOMAIN-SUFFIX,googletagmanager.com,REJECT
+  - DOMAIN-SUFFIX,googletagservices.com,REJECT
+  - DOMAIN-SUFFIX,google-analytics.com,REJECT
+  - DOMAIN-KEYWORD,adservice,REJECT
+  - DOMAIN-KEYWORD,analytics,REJECT
+  - DOMAIN-KEYWORD,analysis,REJECT
+  - SRC-IP-CIDR,192.168.1.201/32,DIRECT
+  - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+  - GEOIP,IR,DIRECT
+  - MATCH,, Manual Server, PROXY, LOAD BALANCE, PANDA, dns-failed
+
